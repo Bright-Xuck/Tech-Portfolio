@@ -40,7 +40,7 @@ export default function Experince() {
                 and building scalable applications
               </h3>
             </span>
-            <span className="w-[60%] mx-auto">
+            <span className="w-[60%] mx-autoghn">
               <h2>2024-2025</h2>
             </span>
             <span className="w-[60%] mx-auto">
@@ -51,7 +51,7 @@ export default function Experince() {
                 in systems
               </h3>
             </span>
-            <span className="w-[60%] mx-auto">
+            <span className="w-[60%] mx-autoghn">
               <h1>2025-Present</h1>
             </span>
           </div>
