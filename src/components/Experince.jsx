@@ -31,7 +31,12 @@ export default function Experince() {
               </h3>
             </span>
           </div>
-          <div className="border border-blue-400"></div>
+          <div className="w-0.5 grid grid-cols-1 grid-rows-4 border border-blue-400 items-center">
+            <div className="w-3 h-3 bg-blue-500 rounded-full justify-self-center border border-black shadow-[0_0_8px_2px] shadow-black"></div>
+            <div className="w-3 h-3 bg-blue-500 rounded-full justify-self-center border border-black shadow-[0_0_8px_2px] shadow-black"></div>
+            <div className="w-3 h-3 bg-blue-500 rounded-full justify-self-center border border-black shadow-[0_0_8px_2px] shadow-black"></div>
+            <div className="w-3 h-3 bg-blue-500 rounded-full justify-self-center border border-black shadow-[0_0_8px_2px] shadow-black"></div>
+          </div>
           <div className="grid grid-cols-1 grid-rows-4 gap-6 items-center">
             <span className="w-[60%] mx-auto">
               <h2>Computer Engineering Student</h2>
@@ -40,7 +45,7 @@ export default function Experince() {
                 and building scalable applications
               </h3>
             </span>
-            <span className="w-[60%] mx-autoghn">
+            <span className="w-[60%] mx-auto">
               <h2>2024-2025</h2>
             </span>
             <span className="w-[60%] mx-auto">
@@ -51,7 +56,7 @@ export default function Experince() {
                 in systems
               </h3>
             </span>
-            <span className="w-[60%] mx-autoghn">
+            <span className="w-[60%] mx-auto">
               <h1>2025-Present</h1>
             </span>
           </div>
