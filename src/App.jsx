@@ -188,10 +188,10 @@ export default function App() {
             <div className="w-15 h-15 bg-blue-500 rounded-full"></div>
             <div>
               <h2>Njikang Bright</h2>
-              <h4 className="flex">
+              <div className="flex">
                 <Copyright></Copyright>
                 <h3>2026 Alll rights reserved</h3>
-              </h4>
+              </div>
             </div>
           </div>
           <div className="flex ml-[20%] w-full">
