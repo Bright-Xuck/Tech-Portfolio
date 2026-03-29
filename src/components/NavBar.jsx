@@ -63,36 +63,36 @@ export default function NavBar() {
 
       <div className="hidden max-md:block fixed top-0 w-full z-100">
         <nav
-          className={`bg-black grid grid-cols-3 grid-rows-1 justify-between w-full h-20 md:h-24 border-b-4 border-b-neutral-500`}
+          className={`bg-black grid grid-cols-3 grid-rows-1 justify-between w-full h-24 border-b-4 border-b-neutral-500`}
         >
-          <div className="flex gap-3 md:gap-5 justify-center items-center text-sm md:text-[1.2rem] font-medium">
-            <div className="bg-purple-500 h-8 w-8 md:h-10 md:w-10 rounded-full"></div>
-            <h2 className="text-purple-500 text-sm md:text-base">Njikang Bright</h2>
+          <div className="flex gap-5 justify-center items-center text-[1.2rem] font-medium">
+            <div className="bg-purple-500 h-10 w-10 rounded-full"></div>
+            <h2 className="text-purple-500">Njikang Bright</h2>
           </div>
 
-          <div className="flex justify-center items-center gap-3 md:gap-5 text-sm md:text-[1.2rem] font-medium col-start-3">
+          <div className="flex justify-center items-center gap-5 text-[1.2rem] font-medium col-start-3">
             <div className="bg-neutral-800 border border-neutral-600 rounded-full p-2">
-              <Sun className="text-white w-4 h-4 md:w-6 md:h-6"></Sun>
+              <Sun className="text-white "></Sun>
             </div>
-            <button onClick={toggle} className="text-black bg-purple-500 px-3 md:px-4 py-2 md:py-3 rounded-xl transition-transform duration-300 hover:scale-110 active:scale-95">
-              {isOpen? <X className="w-4 h-4 md:w-6 md:h-6"></X> : <MenuIcon className="w-4 h-4 md:w-6 md:h-6"></MenuIcon>}
+            <button onClick={toggle} className="text-black bg-purple-500 px-4 py-3 rounded-xl transition-transform duration-300 hover:scale-110 active:scale-95">
+              {isOpen? <X></X> : <MenuIcon></MenuIcon>}
             </button>
           </div>
         </nav>
-        <ul className={`flex flex-col w-full text-neutral-300 text-sm md:text-[1.2rem] font-medium bg-black border-t-4 border-t-neutral-500 overflow-hidden transition-all duration-500 z-50 ${isOpen ? "max-h-[480px] opacity-100" : "max-h-0 opacity-0"}`}>
-          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-16 md:h-24 justify-center items-center transition-colors duration-300">
+        <ul className={`flex flex-col w-full text-neutral-300 text-[1.2rem] font-medium bg-black border-t-4 border-t-neutral-500 overflow-hidden transition-all duration-500 z-50 ${isOpen ? "max-h-[480px] opacity-100" : "max-h-0 opacity-0"}`}>
+          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-24 justify-center items-center transition-colors duration-300">
             <NavLink to="/" onClick={closeMenu}>Home</NavLink>
           </li>
-          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-16 md:h-24 justify-center items-center transition-colors duration-300">
+          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-24 justify-center items-center transition-colors duration-300">
             <NavLink to="/about" onClick={closeMenu}>About</NavLink>
           </li>
-          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-16 md:h-24 justify-center items-center transition-colors duration-300">
+          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-24 justify-center items-center transition-colors duration-300">
             <NavLink to="/Experience" onClick={closeMenu}>Experience</NavLink>
           </li>
-          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-16 md:h-24 justify-center items-center transition-colors duration-300">
+          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-24 justify-center items-center transition-colors duration-300">
             <NavLink to="/projects" onClick={closeMenu}>Projects</NavLink>
           </li>
-          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-16 md:h-24 justify-center items-center transition-colors duration-300">
+          <li className="hover:bg-neutral-300 hover:text-black flex w-full h-24 justify-center items-center transition-colors duration-300">
             <NavLink to="/casestudies" onClick={closeMenu}>Case Stuies</NavLink>
           </li>
         </ul>
