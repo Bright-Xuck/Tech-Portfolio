@@ -8,12 +8,7 @@
   --animate-cube3: cube3 4s ease-in-out infinite 1s;
   --animate-cube4: cube4 7s ease-in-out infinite 1.5s;
   --animate-cube5: cube5 5s ease-in-out infinite 3s;
-  --animate-typewriter: typewriter 4s steps(11) infinite ;
-  --animate-caret: blink 1s steps(1) infinte;
-  --animate-pulse-border-0: pulseColor-0 2s ease-in-out infinite;
-  --animate-pulse-border-1: pulseColor-1 2s ease-in-out infinite 0.3s;
-  --animate-pulse-border-2: pulseColor-2 2s ease-in-out infinite 0.6s;
-  --animate-pulse-border-3: pulseColor-3 2s ease-in-out infinite 0.9s;
+  --animate-typewriter: typewriter 3s steps(20) infinite 1s;
 }
 
 @keyframes gradient {
@@ -94,77 +89,34 @@
   }
 }
 
-/* Pulsing border animations */
-@keyframes pulseColor-0 {
-  0%,
-  100% {
-    border-color: rgb(6, 182, 212);
-    box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  50% {
-    border-color: rgb(59, 130, 246);
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes pulseColor-1 {
-  0%,
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
   100% {
-    border-color: rgb(234, 179, 8);
-    box-shadow: 0 0 20px rgba(234, 179, 8, 0.5);
-  }
-  50% {
-    border-color: rgb(251, 146, 60);
-    box-shadow: 0 0 30px rgba(251, 146, 60, 0.8);
-  }
-}
-
-@keyframes pulseColor-2 {
-  0%,
-  100% {
-    border-color: rgb(168, 85, 247);
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
-  }
-  50% {
-    border-color: rgb(236, 72, 153);
-    box-shadow: 0 0 30px rgba(236, 72, 153, 0.8);
-  }
-}
-
-@keyframes pulseColor-3 {
-  0%,
-  100% {
-    border-color: rgb(239, 68, 68);
-    box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
-  }
-  50% {
-    border-color: rgb(34, 197, 94);
-    box-shadow: 0 0 30px rgba(34, 197, 94, 0.8);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes typewriter {
-  0%{
+  from{
     width: 0ch;
   }
-  40%{
-    width:10ch;
-  }
-  70%{
-    width:21ch;
-  }
-  100%{
-    width:21ch;
-  }
-}
-
-@keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
+  to{
+    width: 20ch;
   }
 }
 
@@ -175,7 +127,6 @@
 }
 
 .hero-section h1 {
-  animation: fadeInDown 0.8s ease-out;
   font-weight: 900;
   letter-spacing: -1px;
 }
@@ -234,17 +185,5 @@
 
 .hero-section button:active {
   transform: translateY(0);
-}
-
-/* Scroll indicator pulse animation */
-@keyframes scrollPulse {
-  0%, 100% {
-    opacity: 0.5;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(8px);
-  }
 }
 

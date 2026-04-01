@@ -31,7 +31,7 @@ export default function App() {
           <NavBar />
           <section className="hero-section h-screen flex flex-col justify-center items-center z-10 text-white relative">
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-6xl md:text-7xl font-black mb-6 bg-linear-to-r from-lime-300 via-blue-400 to-purple-500 bg-clip-text text-transparent leading-tight drop-shadow-lg">
+              <h1 className="text-6xl md:text-7xl font-black mb-6 leading-tight animate-typewriter overflow-hidden whitespace-nowrap border-r-4">
                 Hi there! I'm Bright
               </h1>
 
@@ -108,79 +108,126 @@ export default function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="w-full px-8 py-20 bg-black/80">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Let's Work Together
-            </h2>
-            <p className="text-white/80 mb-8 text-lg">
-              I'm always open to new opportunities and interesting projects.
-              Feel free to reach out!
-            </p>
-          </div>
-          <div>
-            <div>
-              <h1>Get in Touch</h1>
-              <div>
-                <div>
-                  <Mail></Mail>
+        <section id="contact" className="w-full px-4 sm:px-8 py-16 sm:py-20 bg-black/80 backdrop-blur-sm">
+          <div className="max-w-5xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+                Let's Work Together
+              </h2>
+              <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto">
+                I'm always open to new opportunities and interesting projects.
+                Feel free to reach out!
+              </p>
+            </div>
+
+            {/* Contact Methods & Form Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              
+              {/* Get in Touch - Contact Methods */}
+              <div className="space-y-6">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-8">
+                  Get in Touch
+                </h3>
+                
+                {/* Email */}
+                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-blue-500/30 hover:border-blue-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                  <div className="flex-shrink-0 p-3 bg-blue-500/20 rounded-lg">
+                    <Mail className="text-blue-400" size={24} />
+                  </div>
                   <div>
-                    <h3>Email</h3>
-                    <a href="mailto:brightnjikang@gmail.com">
+                    <h4 className="text-lg font-semibold text-white mb-1">Email</h4>
+                    <a href="mailto:brightnjikang@gmail.com" className="text-blue-300 hover:text-blue-200 transition-colors break-all text-sm sm:text-base">
                       brightnjikang@gmail.com
                     </a>
                   </div>
                 </div>
-                <div>
-                  <Linkedin></Linkedin>
+
+                {/* LinkedIn */}
+                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-purple-900/40 to-blue-900/40 border border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                  <div className="flex-shrink-0 p-3 bg-purple-500/20 rounded-lg">
+                    <Linkedin className="text-purple-400" size={24} />
+                  </div>
                   <div>
-                    <h3>LinkedIn</h3>
-                    <a href="brightnjikang">brightnjikang</a>
+                    <h4 className="text-lg font-semibold text-white mb-1">LinkedIn</h4>
+                    <a href="https://linkedin.com/in/brightnjikang" className="text-purple-300 hover:text-purple-200 transition-colors text-sm sm:text-base">
+                      brightnjikang
+                    </a>
                   </div>
                 </div>
-                <div>
-                  <Github></Github>
+
+                {/* GitHub */}
+                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-lime-900/40 to-green-900/40 border border-lime-500/30 hover:border-lime-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-lime-500/20">
+                  <div className="flex-shrink-0 p-3 bg-lime-500/20 rounded-lg">
+                    <Github className="text-lime-400" size={24} />
+                  </div>
                   <div>
-                    <h3>Github</h3>
-                    <a href="bright-Xuck/github.com">bright-Xuck</a>
+                    <h4 className="text-lg font-semibold text-white mb-1">GitHub</h4>
+                    <a href="https://github.com/bright-Xuck" className="text-lime-300 hover:text-lime-200 transition-colors text-sm sm:text-base">
+                      bright-Xuck
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-            <form action="" method="POST">
-              <h2>Contact Me</h2>
-              <div>
-                <div>
-                  <label htmlFor="name">Name</label>
+
+              {/* Contact Form */}
+              <form action="" method="POST" className="space-y-6 p-4 sm:p-8 rounded-lg bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-purple-500/30 backdrop-blur-sm">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white">
+                  Contact Me
+                </h3>
+
+                {/* Name Input */}
+                <div className="space-y-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-white/90">
+                    Name
+                  </label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     placeholder="Your name"
+                    className="w-full px-4 py-2 sm:py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 text-sm sm:text-base"
                   />
                 </div>
-                <div>
-                  <label htmlFor="email">Email</label>
+
+                {/* Email Input */}
+                <div className="space-y-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-white/90">
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Your email"
+                    className="w-full px-4 py-2 sm:py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 text-sm sm:text-base"
                   />
                 </div>
-                <div>
-                  <label htmlFor="message">Message</label>
+
+                {/* Message Textarea */}
+                <div className="space-y-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-white/90">
+                    Message
+                  </label>
                   <textarea
                     name="message"
                     id="message"
+                    rows="5"
                     placeholder="Your message"
+                    className="w-full px-4 py-2 sm:py-3 bg-black/30 border border-blue-500/30 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 resize-none text-sm sm:text-base"
                   ></textarea>
                 </div>
-              </div>
-              <div>
-                <button>Send Message</button>
-              </div>
-            </form>
+
+                {/* Submit Button */}
+                <button className="w-full group relative px-6 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95">
+                  <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-600 rounded-lg"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-blue-400 to-purple-400 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-lg"></div>
+                  <span className="relative text-white flex items-center justify-center gap-2">
+                    Send Message
+                  </span>
+                </button>
+              </form>
+            </div>
           </div>
         </section>
         <footer className="grid grid-cols-[1fr_2fr]">
