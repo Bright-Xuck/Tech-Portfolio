@@ -8,8 +8,8 @@ export default function Experince() {
         <h2 className="text-4xl font-bold text-white text-center mb-12">
           Experience & Education
         </h2>
-        <div className="grid grid-cols-[1fr_auto_1fr] ">
-          <div className="w-full grid grid-cols-1 grid-rows-4 gap-6 items-center text-end">
+        <div className="grid grid-cols-[auto_1fr] md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-0">
+          <div className="hidden md:grid w-full grid grid-cols-1 grid-rows-4 gap-6 items-center text-end">
             <span className="w-[60%] mx-auto">
               <h2>2023-Present</h2>
             </span>
@@ -31,7 +31,7 @@ export default function Experince() {
               </h3>
             </span>
           </div>
-          <div className="w-0.5 grid grid-cols-1 grid-rows-4 border border-blue-400 items-center">
+          <div className="w-0.5 md:w-0.5 grid grid-cols-1 grid-rows-4 border border-blue-400 items-center">
             <div className="w-3 h-3 bg-blue-500 rounded-full justify-self-center border border-black shadow-[0_0_8px_2px] shadow-black"></div>
             <div className="w-3 h-3 bg-blue-500 rounded-full justify-self-center border border-black shadow-[0_0_8px_2px] shadow-black"></div>
             <div className="w-3 h-3 bg-blue-500 rounded-full justify-self-center border border-black shadow-[0_0_8px_2px] shadow-black"></div>
