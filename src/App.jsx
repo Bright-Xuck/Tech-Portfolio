@@ -67,8 +67,8 @@ export default function App() {
               <p className="text-white/70 text-sm uppercase tracking-wider font-semibold">
                 Scroll to explore
               </p>
-              <div className="border-2 border-white/40 rounded-full p-2 hover:border-white/70 transition-colors duration-300">
-                <ArrowDown size={24} className="text-white/60 animate-pulse" />
+              <div className="border-2 border-white/40 rounded-full p-2 hover:border-white/70 transition-colors duration-300 animate-bounce">
+                <ArrowDown size={24} className="text-white/60 animate-bounce" />
               </div>
             </div>
           </section>
@@ -103,7 +103,7 @@ export default function App() {
         <Experince></Experince>
 
         {/* Work/Featured Section */}
-        <section id="work" className="w-full">
+        <section id="work" className="">
           <Projects />
         </section>
 

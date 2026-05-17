@@ -2,9 +2,9 @@ import { Github, ExternalLink } from "lucide-react";
 
 export default function ProjectBoxes({ id, name, description, image, tech, liveLink, githubLink, features }) {
   return (
-    <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden hover:border-white/40 transition-all duration-300 hover:scale-105">
+    <div className="h-8/9 flex flex-col bg-black/40 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden hover:border-white/40 transition-all duration-300 hover:scale-105">
       {/* Image Section */}
-      <div className="w-full h-48 overflow-hidden bg-black/60">
+      <div className="w-full h-50 overflow-hidden bg-black/60">
         <img 
           src={image} 
           alt={name}
@@ -13,7 +13,7 @@ export default function ProjectBoxes({ id, name, description, image, tech, liveL
       </div>
 
       {/* Content Section */}
-      <div className="p-6">
+      <div className="p-4">
         <h2 className="text-2xl font-bold text-white mb-3">{name}</h2>
         
         <p className="text-white/80 text-sm mb-4 line-clamp-3">{description}</p>

@@ -3,7 +3,7 @@ import ProjectBoxes from "./Projectboxes";
 
 export default function Projects(){
     return(
-        <section className="w-full px-8 py-20 bg-linear-to-b from-black/60 to-gray-900">
+        <section className="w-full h-full px-8 py-20 bg-linear-to-b from-black/60 to-gray-900">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
@@ -12,7 +12,7 @@ export default function Projects(){
                     </p>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-2 my-auto gap-2 gap-x-8 max-lg:flex max-lg:flex-col max-lg:gap-y-6">
                     {projectData.map((project) => (
                         <ProjectBoxes
                             key={project.id}
