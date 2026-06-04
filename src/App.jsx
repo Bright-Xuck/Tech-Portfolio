@@ -131,8 +131,8 @@ export default function App() {
                 </h3>
                 
                 {/* Email */}
-                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-blue-500/30 hover:border-blue-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-                  <div className="flex-shrink-0 p-3 bg-blue-500/20 rounded-lg">
+                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-linear-to-br from-blue-900/40 to-purple-900/40 border border-blue-500/30 hover:border-blue-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+                  <div className="shrink-0 p-3 bg-blue-500/20 rounded-lg">
                     <Mail className="text-blue-400" size={24} />
                   </div>
                   <div>
@@ -144,8 +144,8 @@ export default function App() {
                 </div>
 
                 {/* LinkedIn */}
-                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-purple-900/40 to-blue-900/40 border border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
-                  <div className="flex-shrink-0 p-3 bg-purple-500/20 rounded-lg">
+                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-linear-to-br from-purple-900/40 to-blue-900/40 border border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20">
+                  <div className="shrink-0 p-3 bg-purple-500/20 rounded-lg">
                     <Linkedin className="text-purple-400" size={24} />
                   </div>
                   <div>
@@ -157,8 +157,8 @@ export default function App() {
                 </div>
 
                 {/* GitHub */}
-                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-gradient-to-br from-lime-900/40 to-green-900/40 border border-lime-500/30 hover:border-lime-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-lime-500/20">
-                  <div className="flex-shrink-0 p-3 bg-lime-500/20 rounded-lg">
+                <div className="flex items-start gap-4 p-4 sm:p-6 rounded-lg bg-linear-to-br from-lime-900/40 to-green-900/40 border border-lime-500/30 hover:border-lime-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-lime-500/20">
+                  <div className="shrink-0 p-3 bg-lime-500/20 rounded-lg">
                     <Github className="text-lime-400" size={24} />
                   </div>
                   <div>
@@ -171,7 +171,7 @@ export default function App() {
               </div>
 
               {/* Contact Form */}
-              <form action="" method="POST" className="space-y-6 p-4 sm:p-8 rounded-lg bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-purple-500/30 backdrop-blur-sm">
+              <form action="" method="POST" className="space-y-6 p-4 sm:p-8 rounded-lg bg-linear-to-br from-blue-900/30 to-purple-900/30 border border-purple-500/30 backdrop-blur-sm">
                 <h3 className="text-2xl sm:text-3xl font-bold text-white">
                   Contact Me
                 </h3>
