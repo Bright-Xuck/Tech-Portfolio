@@ -9,16 +9,14 @@ import { ArrowDown, Copyright, Github, Linkedin, Mail } from "lucide-react";
 
 //const [slider, setSlider] = useState[0];
 
-const observer = new IntersectionObserver((entry) => {
-  console.log(entry);
-}, {});
 
 export default function App() {
   return (
     <Router>
-      <main className="w-screen bg-linear-to-r from-lime-300 via-blue-500 to-gray-900 bg-size-[400%_400%] overflow-hidden animate-gradient">
+      <main className="overflow-hidden max-w-screen">
         {/* Home Section */}
-        <section id="home" className="relative min-h-screen">
+        <div className="bg-linear-to-r from-lime-300 via-blue-500 to-gray-900 bg-size-[400%_400%] overflow-hidden animate-gradient">
+        <section id="home" className="relative min-h-screen ">
           <div>
             <div className="border border-white opacity-0 w-2.5 h-2.5 absolute left-[45%] top-[10%] animate-cube overflow-hidden"></div>
             <div className="border border-white opacity-0 w-2.5 h-2.5 absolute left-[55%] top-[35%] animate-cube5 overflow-hidden"></div>
@@ -31,7 +29,7 @@ export default function App() {
           <NavBar />
           <section className="hero-section h-screen flex flex-col justify-center items-center z-10 text-white relative">
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-6xl md:text-7xl font-black mb-6 leading-tight animate-typewriter overflow-hidden whitespace-nowrap border-r-4">
+              <h1 className="max-sm:text-4xl max-md:text-6xl text-7xl text-center font-black mb-6 leading-tight animate-typewriter overflow-hidden whitespace-nowrap border-r-4">
                 Hi there! I'm Bright
               </h1>
 
@@ -67,12 +65,13 @@ export default function App() {
               <p className="text-white/70 text-sm uppercase tracking-wider font-semibold">
                 Scroll to explore
               </p>
-              <div className="border-2 border-white/40 rounded-full p-2 hover:border-white/70 transition-colors duration-300 animate-bounce">
-                <ArrowDown size={24} className="text-white/60 animate-bounce" />
+              <div className="border-2 border-white/40 rounded-full p-2 w-7 h-7 grid relative justify-center items-center hover:border-white/70 transition-colors duration-300 animate-bounce">
+                <ArrowDown size={24} className="text-white/60 animate-bounce absolute" />
               </div>
             </div>
           </section>
         </section>
+        </div>
 
         {/* About Section */}
         <section
@@ -230,18 +229,18 @@ export default function App() {
             </div>
           </div>
         </section>
-        <footer className="grid grid-cols-[1fr_2fr]">
-          <div className="flex">
+        <footer className="grid grid-cols-[1fr_2fr] max-sm:flex">
+          <div className="flex gap-3">
             <div className="w-15 h-15 bg-blue-500 rounded-full"></div>
-            <div>
+            <div className="max-sm:flex">
               <h2>Njikang Bright</h2>
-              <div className="flex">
+              <div className="flex items-center">
                 <Copyright></Copyright>
-                <h3>2026 Alll rights reserved</h3>
+                <h3>2026 <span className="max-sm:hidden">All rights reserved</span> </h3>
               </div>
             </div>
           </div>
-          <div className="flex ml-[20%] w-full">
+          <div className="flex ml-[20%] w-full items-center ">
             <div>
               <a href="githublibk"><Github></Github></a>
             </div>

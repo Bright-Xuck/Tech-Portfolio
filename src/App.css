@@ -8,7 +8,7 @@
   --animate-cube3: cube3 4s ease-in-out infinite 1s;
   --animate-cube4: cube4 7s ease-in-out infinite 1.5s;
   --animate-cube5: cube5 5s ease-in-out infinite 3s;
-  --animate-typewriter: typewriter 3s steps(20) infinite 1s;
+  --animate-typewriter: typewriter 4s steps(15) infinite 3s;
 }
 
 @keyframes gradient {
@@ -112,11 +112,23 @@
 }
 
 @keyframes typewriter {
-  from{
+  0%{
     width: 0ch;
   }
-  to{
-    width: 20ch;
+  20%{
+    width: 3ch;
+  }
+  40%{
+    width: 7ch;
+  }
+  60%{
+    width: 12ch;
+  }
+  80%{
+    width: 16ch;
+  }
+  100%{
+    width: 16ch;
   }
 }
 
