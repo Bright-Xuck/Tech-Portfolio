@@ -199,3 +199,6 @@
   transform: translateY(0);
 }
 
+.fade-in{
+  color: red;
+}
